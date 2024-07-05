@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "target": "ES2015", // Set to ES5 for older browser support.
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "outDir": "./build/",
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@wordpress/*": ["node_modules/@wordpress/*"]
+    }
+  },
+  "exclude": ["**/node_modules/**", "build/**", "assets/**", "node_modules/**", "**/build/**", "**/tsconfig.tsbuildinfo", "**/assets/**", "./inc/**"]
+}

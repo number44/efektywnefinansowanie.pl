@@ -1,0 +1,93 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-accordion-accordion {
+  --blue: #008acf;
+  --red: #ff0000;
+  font-size: 1em;
+  padding: 1em;
+}
+.wp-block-accordion-accordion {
+  .accordion-box {
+    margin-block-end: 2rem;
+    @media (min-width: 62em) {
+      margin-block-end: 2.5rem;
+    }
+    .accordion-blue {
+      --accordion-color: var(--blue);
+    }
+    .accordion-red {
+      --accordion-color: var(--red);
+    }
+    .accordion {
+      --hover-color: var(--blue);
+      display: grid;
+      &__panel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 1.5rem;
+        border-bottom: 1px solid #d9d9d9;
+        cursor: pointer;
+        transition: background-color ease-in-out 0.3s;
+        &:hover {
+          background-color: #f8f8f8;
+          h2 {
+            color: var(--hover-color) !important;
+          }
+        }
+        img {
+          transition: transform ease-in-out 0.3s;
+          transform: rotate(180deg);
+          height: 2rem;
+          width: 2rem;
+          width: max-content;
+        }
+        h2 {
+          transition: color ease-in-out 0.3s;
+          margin-block: 0.5rem;
+          font-size: 1.125rem;
+          @media (min-width: 62em) {
+            font-size: 1.5rem;
+          }
+          display: flex;
+          align-items: center;
+          padding-block: 0.5rem;
+        }
+      }
+      &__content {
+        display: grid;
+        transition: all 500ms !important;
+        padding-inline: 1.5rem;
+        grid-template-rows: 0fr;
+        p,
+        .accordion-text {
+          box-sizing: border-box;
+          overflow: hidden;
+          padding: inherit;
+          margin: inherit;
+        }
+      }
+    }
+  }
+  .accordion__content-open {
+    grid-template-rows: 1fr !important;
+    padding-block: 0.5rem;
+  }
+  .accordion__panel-open {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+      flex: 1 !important;
+      color: var(--accordion-color) !important;
+    }
+    img {
+      transform: rotate(0deg) !important;
+    }
+  }
+}

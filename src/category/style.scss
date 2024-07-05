@@ -1,0 +1,229 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+// .wp-block-studiowac-article-article *:not(.post-content):not(.post-content *) {
+//   padding: 0;
+//   margin: 0;
+//   box-sizing: border-box;
+// }
+
+.wp-block-studiowac-article-article {
+  .article-grid {
+    width: min(90rem, 100% - 4rem);
+    margin-inline: auto;
+    display: grid;
+    gap: 1.5rem;
+    @media (min-width: 75rem) {
+      grid-template-columns: 1fr min(25rem, 100%);
+    }
+  }
+  .breadcrumb {
+    --breadcrumb-color: #008acf;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    & > * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    font-size: 0.75rem;
+    display: flex;
+    line-height: 1.2;
+    margin-inline: auto;
+    white-space: nowrap;
+    columns: #1a1a1a;
+    text-overflow: clip;
+    display: flex;
+    align-items: center;
+    padding-block: 0.58rem;
+    @media (min-width: 62em) {
+      padding-block: 1.12rem;
+    }
+    .page-title {
+      overflow-x: hidden;
+      text-overflow: clip;
+    }
+    &__link {
+      &:hover {
+        text-decoration: underline;
+      }
+      font-size: 0.75rem;
+      color: var(--breadcrumb-color);
+      display: flex;
+      align-items: center;
+      img {
+        width: 1rem;
+      }
+    }
+  }
+}
+.wp-block-studiowac-article-article {
+  .article-header {
+    display: grid;
+    overflow: hidden;
+    width: 100%;
+    margin-inline: auto;
+    position: relative;
+    @media (min-width: 62em) {
+    }
+    &__chips {
+      position: absolute;
+      left: 0.5rem;
+      top: 0.5rem;
+      display: flex;
+      gap: 0.75rem;
+      & > * {
+        box-sizing: border-box;
+        color: #fff;
+        font-size: 0.75rem;
+        line-height: 1.625rem; /* 216.667% */
+        padding: 0.375rem 1rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        flex-shrink: 0;
+        border-radius: 2.375rem;
+        border: 1px solid #fff;
+        cursor: pointer;
+        background: rgba(26, 26, 26, 0.38);
+        height: 1.625rem;
+        display: flex;
+        align-items: center;
+        transition:
+          0.3s ease-in-out background-color,
+          0.3s ease-in-out color;
+        &:hover {
+          background: white;
+          color: #434343;
+        }
+      }
+    }
+    picture {
+      aspect-ratio: 24.5/10.8;
+      @media (min-width: 62em) {
+        aspect-ratio: unset;
+        height: 25rem;
+      }
+      transform-origin: center;
+      cursor: pointer;
+      cursor: zoom-in;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+      }
+    }
+    & > * {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+  .article-title {
+    color: #008acf !important;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 500;
+
+    font-size: 2rem !important;
+  }
+  .article-date {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.5rem !important;
+    color: #565656;
+    font-size: 0.875rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.625rem;
+  }
+}
+.wp-block-studiowac-article-article {
+  dialog {
+    box-sizing: border-box;
+    padding: 0 !important;
+    box-sizing: border-box;
+    transition: all ease-in-out 0.3s;
+    width: min(100%, 62rem);
+    border: none;
+    margin: auto;
+    outline: none;
+    box-shadow: 0 0 3px #434343;
+    picture {
+      box-sizing: border-box;
+    }
+  }
+  dialog:focus {
+    border: solid 2px black;
+  }
+  dialog::backdrop {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  .close-dialog {
+    cursor: pointer;
+    outline: none;
+    inset-inline-end: 2rem;
+    inset-block-start: 2rem;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    position: fixed;
+    background: white;
+    border-radius: 50%;
+    border: solid 2px var(--dark);
+    &:hover svg {
+      transform: rotate(90deg);
+    }
+    svg {
+      transition: transform ease-in-out 0.3s;
+      stroke: var(--dark);
+    }
+  }
+
+  .dialog-context {
+    box-shadow: 0px 0px 30px #434343 !important;
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+.wp-block-studiowac-article-article :is(.sidebar) {
+  box-sizing: border-box;
+  gap: 0 !important;
+  padding: 0 !important;
+  padding-top: 0 !important;
+  padding-block-start: 0 !important;
+  padding-block: 0 !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+  align-self: start !important;
+}
+.wp-block-studiowac-article-article :is(.sidebar) > * {
+  box-sizing: border-box;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+.aside-link {
+}

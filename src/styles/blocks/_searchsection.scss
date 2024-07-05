@@ -1,0 +1,28 @@
+#search-result {
+  position: fixed;
+  @media (min-width: 62em) {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 1000px;
+  }
+  z-index: 20;
+  background: white;
+  inset: 0;
+  overflow-y: auto;
+  .info {
+    margin-bottom: 1.5rem;
+  }
+  padding-top: 5.65rem;
+  .container {
+    display: grid;
+    gap: 1.5rem;
+    @media (min-width: 62em) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .btn {
+    margin-top: 1.5rem;
+  }
+}

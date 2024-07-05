@@ -1,0 +1,90 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studiowac/catalog",
+  "version": "0.1.0",
+  "title": "Catalog  links block",
+  "category": "theme",
+  "icon": "layout",
+  "description": "Catalog links ",
+  "example": {},
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "interactivity": true,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "wide"
+    },
+    "heading": {
+      "type": "object",
+      "default": {
+        "text": "Katalog uczelni wyższych",
+        "newTab": false,
+        "url": "#",
+        "title": "Katalog uczelni wyższych",
+        "alt": "Katalog uczelni wyższych"
+      }
+    },
+    "links": {
+      "type": "array",
+      "default": [
+        {
+          "id": 0,
+          "text": "Wyszukiwarka uczelni",
+          "textSm": "Szukam zawodów",
+          "newTab": false,
+          "url": "#",
+          "imgId": 0,
+          "imgUrl": "https://placehold.co/600x400",
+          "imgSmUrl": "https://placehold.co/300x200",
+          "title": "Katalog uczelni wyższych",
+          "alt": "Katalog uczelni wyższych"
+        },
+        {
+          "id": 1,
+          "text": "Wyszukiwarka uczelni",
+          "textSm": "Szukam uczelni",
+          "newTab": false,
+          "url": "#",
+          "title": "Katalog uczelni wyższych",
+          "alt": "Katalog uczelni wyższych",
+          "imgId": 0,
+          "imgUrl": "https://placehold.co/600x400",
+          "imgSmUrl": "https://placehold.co/300x200"
+        },
+        {
+          "id": 2,
+          "text": "Wyszukiwarka uczelni",
+          "textSm": "Szukam uczelni",
+          "newTab": false,
+          "url": "#",
+          "title": "Katalog uczelni wyższych",
+          "imgId": 0,
+          "imgUrl": "https://placehold.co/600x400",
+          "imgSmUrl": "https://placehold.co/300x200",
+          "alt": "Katalog uczelni wyższych"
+        }
+      ]
+    },
+    "autoplay": {
+      "type": "object",
+      "default": {
+        "auto": true,
+        "delay": 5000
+      }
+    }
+  },
+  "textdomain": "studiowac",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScriptModule": "file:./view.js"
+}

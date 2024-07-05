@@ -1,0 +1,22 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-ds-footer-studiowac-blocks input[type="text"] {
+}
+.wp-block-studiowac-footer {
+  background-color: var(--wp--preset--color--custom-secondary);
+  color: var(--wp--preset--color--custom-background);
+  padding-block: 4rem;
+  min-height: 8rem;
+  padding-inline: 1.4rem;
+  display: grid;
+  gap: 1.5rem;
+}
+.wp-block-studiowac-footer :is(.copyright) {
+  font-size: 0.8rem;
+  text-align: center;
+  opacity: 0.4;
+  color: var(--wp--preset--color--custom-background);
+}

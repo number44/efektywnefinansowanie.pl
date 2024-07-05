@@ -1,0 +1,219 @@
+@use "../colors";
+.button {
+  --btn-color: var(--red);
+  --btn-color-border: var(--red);
+  --btn-color-hover: var(--red-dark);
+  border-radius: 12.5rem;
+  cursor: pointer;
+  background: var(--btn-color);
+  gap: 1rem;
+  color: white;
+  display: flex;
+  padding: 0.5rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  transition: background-color ease-in-out 0.3s;
+  border: 1px solid var(--btn-color-border);
+  &:hover {
+    border: var(--btn-color-border) solid 1px;
+    background: var(--btn-color-hover);
+  }
+  svg {
+    height: 1.2rem;
+  }
+}
+.button--circle {
+  overflow: hidden;
+  width: 2rem !important;
+  height: 2rem !important;
+  aspect-ratio: 1/1;
+  padding: 0px;
+  padding: 0.4rem;
+  border-radius: 50rem;
+}
+
+.button--outline {
+  background: white !important;
+  color: var(--btn-color-border);
+  stroke: var(--btn-color-border) !important;
+  svg {
+    path {
+      stroke: var(--btn-color-border) !important;
+    }
+  }
+  &:hover {
+    background: var(--btn-color-border) !important;
+    color: white;
+    svg {
+      path {
+        stroke: #fff !important;
+      }
+    }
+  }
+}
+.button--green {
+  --btn-color: var(--green) !important;
+  --btn-hover: var(--green) !important;
+  --btn-color-border: var(--green);
+}
+
+.button--blue {
+  --btn-color: var(--blue) !important;
+  --btn-hover: var(--blue) !important;
+  --btn-color-border: var(--blue) !important;
+  &:hover {
+    background: var(--blue-dark);
+  }
+}
+
+.btn-red {
+  --btn-color: var(--red) !important;
+  --btn-color-hover: var(--red-dark) !important;
+}
+.btn {
+  --btn-color: var(--blue);
+  --btn-color-hover: var(--blue-dark);
+  cursor: pointer;
+  display: inline-flex;
+  padding: 0.5rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 12.5rem;
+  background: var(--btn-color);
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: background 0.3s ease-in-out;
+  &:hover {
+    background: var(--btn-color-hover);
+  }
+}
+.btn-outline {
+  background: transparent;
+  border: solid 2px var(--btn-color);
+  &:hover {
+    border: solid 2px var(--btn-color-hover);
+  }
+}
+
+.btn-more--red {
+  --section-color: var(--red) !important;
+  margin-bottom: 0rem !important;
+}
+.btn-more {
+  --section-color: var(--blue);
+  position: relative;
+  font-size: var(--fs-500);
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  &::before {
+    @media (max-width: 62rem) {
+      display: none;
+    }
+    content: "";
+    height: 1px;
+    background: var(--section-color);
+    width: 100%;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+    z-index: -1;
+  }
+  text-align: center;
+  color: var(--section-color);
+  &-text,
+  .btn-outline {
+    background: white;
+    @media (min-width: 62rem) {
+      padding-inline: 2.5rem;
+    }
+    .btn {
+      z-index: 2;
+      display: flex;
+      gap: 1rem;
+      // @media (min-width: 62rem) {
+      //   padding-inline: 2.5rem;
+      // }
+      text-transform: uppercase;
+      line-height: normal;
+    }
+  }
+}
+
+.search-btns {
+  display: flex;
+  margin-block-start: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.58rem;
+}
+.search-btn {
+  cursor: pointer;
+  padding: 0.25rem 1rem;
+  height: 2rem;
+  color: var(--red);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: var(--red) 1px solid;
+  background-color: white;
+  transition: background-color ease-in-out 0.3s;
+  &:hover {
+    background-color: rgba(187, 11, 0, 0.06);
+  }
+}
+
+.indicator {
+  width: 0.5rem;
+  animation-name: pulse;
+  animation-duration: 0.5s;
+  animation-direction: alternate-reverse;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.2);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(2);
+  }
+}
+.button-sm {
+  display: inline-flex;
+  height: 1.625rem;
+  padding: 0.375rem 1rem !important;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  line-height: 1.625rem; /* 216.667% */
+}
+.button-full-sm {
+  @media (min-width: 62rem) {
+    width: fit-content;
+  }
+  width: 100%;
+}
+
+.mx-2 {
+  margin-block: 2rem;
+}
+
+.comment-form__button {
+  @media (max-width: 62rem) {
+    width: 80%;
+    margin-inline: auto;
+  }
+}

@@ -1,0 +1,187 @@
+.ucard:active,
+.ucard:hover {
+  background-color: #fbf0f0;
+}
+.ucards {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+.ucard {
+  .link-bg {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background-color: violet;
+    z-index: 0;
+    background-color: transparent;
+  }
+  position: relative;
+  transition: background-color ease-in-out 0.3s;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+  display: grid;
+  grid-template-areas:
+    "logo logo logo"
+    "name name thumb"
+    "info info info"
+    "button button button";
+  @media (min-width: 62em) {
+    grid-template-areas:
+      "logo name thumb"
+      "logo info button";
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+  }
+  &__logo {
+    z-index: 1;
+    grid-area: logo;
+    background: #fff;
+    display: flex;
+    height: 8.5625rem;
+    border-bottom: 1px solid #d9d9d9;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 62em) {
+      width: 9rem;
+      height: 100%;
+      padding-inline: 0.62rem;
+    }
+  }
+  &__name {
+    padding-inline: 1.5rem;
+    padding-top: 1rem;
+    color: var(--red);
+    grid-area: name;
+    padding-bottom: 1.5rem;
+    z-index: 1;
+    @media (min-width: 62em) {
+      padding-bottom: 1rem;
+    }
+
+    &:hover .h2 {
+      text-decoration: underline;
+    }
+  }
+  &__thumb {
+    z-index: 1;
+    @media (max-width: 62rem) {
+      padding-inline-end: 1.5rem;
+      padding-block: 1rem;
+    }
+
+    @media (max-width: 62rem) {
+      padding-inline: 1.5rem;
+      padding-block: 1rem;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    picture {
+      width: 3.8125rem;
+      height: 3.75rem;
+    }
+    grid-area: thumb;
+  }
+  &__info {
+    background-color: transparent;
+    padding-inline: 1.5rem;
+    grid-area: info;
+    width: fit-content;
+    align-self: self-start;
+
+    @media (min-width: 62em) {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding-bottom: 1rem;
+    }
+    a {
+      z-index: 1;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .info-line {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      line-height: 1.125rem; /* 128.571% */
+      gap: 0.5rem;
+      @media (min-width: 62em) {
+        flex-direction: row;
+      }
+    }
+    .info__row {
+      display: grid;
+      grid-template-columns: 5rem auto;
+      @media (min-width: 62em) {
+        display: flex;
+        gap: 1ch;
+      }
+      p {
+        white-space: nowrap;
+      }
+      p:first-child {
+        color: #565656;
+      }
+    }
+  }
+  &__button {
+    z-index: 1;
+    padding-block: 1.5rem;
+    grid-area: button;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 1.5rem;
+    @media (min-width: 62em) {
+      padding-block: 0;
+    }
+    .btn {
+      border: solid 1px var(--red);
+      width: 100%;
+      white-space: nowrap;
+    }
+    .btn-white {
+      background: white;
+      color: var(--red);
+
+      svg,
+      img {
+        color: var(--red);
+      }
+    }
+  }
+}
+.with-border {
+  border: solid 1px var(--red);
+}
+.with-button {
+  border: 1px solid rgba(218, 13, 0, 0.48);
+}
+.more-cards-section {
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+}
+
+.logo_no_thumb {
+  @media (max-width: 62rem) {
+    position: relative;
+    picture {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      img {
+        object-fit: contain;
+      }
+    }
+    background-color: #d9d9d9;
+  }
+}
+.logo_no_thumb {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}

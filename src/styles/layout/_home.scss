@@ -1,0 +1,125 @@
+.page-main :is(.carousel-main) {
+  &::before {
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    content: "";
+    background: var(--blue);
+    height: 100px;
+    width: 100%;
+  }
+  position: relative;
+  margin-top: 4rem;
+  background: #434343;
+  height: 23.4375rem;
+  background: var(--light);
+  padding-bottom: 3rem;
+  @media (min-width: 62em) {
+    padding-bottom: 2.12rem;
+  }
+  @media (min-width: 62em) {
+    margin-top: 4.5rem;
+    height: 31.875rem;
+  }
+}
+.page-main :is(.search-links) {
+  margin-bottom: 1.75rem;
+  @media (min-width: 62em) {
+    margin-bottom: 2.5rem;
+  }
+}
+
+footer {
+  margin-top: 1.5rem;
+}
+.section-one {
+  background: var(--light);
+}
+.page-main .section-one :is(.heading) {
+  margin-bottom: 2rem;
+  @media (min-width: 62em) {
+    margin-bottom: 1.56rem;
+    // margin-top: 2.12rem;
+  }
+}
+
+.page-main :is(.heading--blue) {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+
+  @media (min-width: 62em) {
+    margin-top: 2.5rem;
+    margin-bottom: 2.25rem;
+  }
+}
+.page-main :is(.swiper-two) {
+  max-width: 40rem;
+}
+.page-main :is(.homepage-sidebar) {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.page-main :is(.section-blue) {
+  display: grid;
+
+  gap: 1.5rem;
+}
+
+:is(.heading--black) {
+  margin-top: 3.87rem;
+  margin-bottom: 2.08rem;
+}
+
+.swiper-two-page {
+  max-width: min(40rem, 90dvw);
+  margin-inline: auto;
+  padding-bottom: 1rem;
+  .swiper-wrapper {
+    .swiper-slide {
+      picture {
+        box-shadow: 1px 1px 13px 0px rgba(0, 15, 52, 0.1);
+      }
+    }
+  }
+}
+.orange-grid :is(.swiper-two) {
+  max-width: min(40rem, 90dvw);
+  margin-inline: auto;
+  padding-bottom: 1rem;
+  .swiper-wrapper {
+    .swiper-slide {
+      picture {
+        box-shadow: 1px 1px 13px 0px rgba(0, 15, 52, 0.1);
+      }
+    }
+  }
+}
+///
+/// Orange
+.page-main :is(.heading--orange) {
+  margin-top: 3.87rem;
+  margin-bottom: 2.08rem;
+}
+.page-main :is(.section-orange) {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.orange-grid {
+  display: grid;
+  gap: 1.5rem;
+  @media (min-width: 62em) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 62em) {
+  .orange-grid :is(.boxes) {
+    grid-column: 1/3;
+  }
+  .orange-grid :is(.banners) {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+}

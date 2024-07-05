@@ -1,0 +1,27 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-sidebar-sidebar input[type="text"] {
+  font-size: 1em;
+  color: inherit;
+  background: inherit;
+}
+.wp-block-sidebar-sidebar input {
+  border: solid 1px #434343;
+}
+.wp-block-sidebar-sidebar {
+  width: min(32rem, 100%);
+  margin-inline: auto;
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+.wp-block-sidebar-sidebar :is(.panel) {
+  margin-top: 2rem;
+  box-shadow: 0 0 3px #434343;
+  border-radius: 0.5rem;
+}
+.alignfull {
+}

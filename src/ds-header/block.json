@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studiowac/header",
+  "version": "0.1.0",
+  "title": "Studiowac Header",
+  "category": "theme",
+  "icon": "layout",
+  "description": "Main Header ",
+  "example": {},
+  "supports": {
+    "interactivity": true,
+    "alignWide": true,
+    "html": true
+  },
+  "attributes": {
+    "links": {
+      "type": "array",
+      "default": [],
+      "query": {
+        "order": {
+          "type": "number"
+        },
+        "id": {
+          "type": "number"
+        },
+        "url": {
+          "type": "string",
+          "source": "attribute",
+          "attribute": "href",
+          "selector": "a"
+        },
+        "text": {
+          "type": "string",
+          "source": "text",
+          "selector": "a"
+        },
+        "title": {
+          "type": "string",
+          "source": "attribute",
+          "attribute": "title",
+          "selector": "a"
+        }
+      }
+    }
+  },
+
+  "textdomain": "studiowac",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScriptModule": "file:./view.js"
+}

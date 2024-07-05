@@ -1,0 +1,108 @@
+.baza {
+  text-transform: uppercase;
+  .baza-header {
+    background: var(--red-dark);
+    color: white;
+    display: grid;
+    padding: 0.6rem 1.5rem;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .btn-link {
+    display: grid !important;
+    place-content: center;
+    align-self: center;
+    padding-block: 1rem;
+    border-top: 1px solid #ccc;
+    .btn {
+      background: var(--red-dark);
+    }
+  }
+  .baza-link {
+    span {
+      flex-grow: 1;
+    }
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1.5rem;
+    padding-block: 1.5rem;
+    position: relative;
+    height: 6.125rem;
+    border-top: 1px #ccc solid;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: var(--red);
+      height: 1px;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover {
+      color: var(--red);
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.aktualnosci {
+  text-transform: uppercase;
+  .baza-header {
+    background: var(--blue);
+    color: white;
+    display: grid;
+    padding: 0.6rem 1.5rem;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .btn-link {
+    display: grid !important;
+    place-content: center;
+    align-self: center;
+    padding-block: 1rem;
+    border-top: 1px solid #ccc;
+  }
+  .baza-link {
+    span {
+      flex-grow: 1;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.625rem;
+    }
+    display: flex;
+    gap: 0.5rem;
+    padding-right: 0.25rem;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-top: 1px #ccc solid;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: var(--red);
+      height: 1px;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover {
+      color: var(--red);
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}

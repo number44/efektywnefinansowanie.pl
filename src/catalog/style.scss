@@ -1,0 +1,279 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-studiowac-catalog * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wp-block-studiowac-catalog {
+  background-color: #f5f5f5 !important;
+  padding-block-start: 2.12rem;
+  margin-inline: auto;
+}
+
+// Catalog logos
+.wp-block-studiowac-catalog :is(.catalog-logos) {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+  padding-block-end: 3.13rem;
+}
+.wp-block-studiowac-catalog :is(.catalog-logo) {
+  box-shadow: 0 0 12px #00000014;
+  padding: 1rem;
+  // box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
+
+  background-color: #fff;
+}
+.wp-block-studiowac-catalog :is(.catalog-logo img) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wp-block-studiowac-catalog :is(.catalog-logo picture) {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+// Search links
+.wp-block-studiowac-catalog :is(.search-links) {
+  padding-block-end: 2.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+.wp-block-studiowac-catalog :is(.search-link) {
+  text-transform: uppercase;
+  display: grid;
+  color: white;
+}
+.wp-block-studiowac-catalog :is(.search-link) :is(.search-link .content) {
+  transition: background-color ease-in-out 0.3s;
+  background-color: #bb0b00;
+}
+
+.wp-block-studiowac-catalog :is(.search-link):hover :is(.search-link .content) {
+  background-color: #a80000;
+}
+@media screen and (min-width: 62em) {
+  .wp-block-studiowac-catalog :is(.content) {
+    height: 3.8rem;
+  }
+
+  .wp-block-studiowac-catalog :is(.search-link picture) {
+    height: 8.25rem !important;
+  }
+  .wp-block-studiowac-catalog :is(.search-link img) {
+    height: 8.25rem !important;
+    aspect-ratio: 401/133;
+  }
+  .wp-block-studiowac-catalog :is(.search-links) {
+    padding-block-end: 3.13rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 62em) {
+  .wp-block-studiowac-catalog :is(.search-links) {
+    display: grid;
+  }
+  .wp-block-studiowac-catalog :is(.search-link) {
+    height: 5.5rem;
+    grid-template-columns: auto 1fr;
+  }
+  .wp-block-studiowac-catalog :is(.search-link .content) {
+    flex: 1 !important;
+  }
+  .wp-block-studiowac-catalog :is(.search-link picture) {
+    height: 100%;
+    aspect-ratio: 134/88;
+  }
+  .wp-block-studiowac-catalog :is(.search-link img) {
+    aspect-ratio: 134/88;
+  }
+  .wp-block-studiowac-catalog :is(.content) {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+.wp-block-studiowac-catalog :is(.content) {
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wp-block-studiowac-catalog :is(.content h3) {
+  font-size: clamp(1rem, 0.7727272727272727rem + 0.9324009324009324vw, 1.5rem) !important;
+  font-weight: 400;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.wp-block-studiowac-catalog :is(picture) {
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Slider
+.wp-block-studiowac-catalog {
+  .slider {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%;
+  }
+  .slide {
+    margin-right: 10px;
+    padding: 1.5rem;
+    scroll-snap-align: start;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1.5rem;
+    img {
+      width: 100%;
+    }
+  }
+  .slide-logo {
+    background-color: #fff;
+    padding: 1rem;
+    max-width: 20rem;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .slider {
+    touch-action: none;
+  }
+  .slider * {
+    touch-action: none;
+  }
+  .slider-control {
+    margin-inline: auto;
+    height: 2rem;
+    gap: 2rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    padding-block-end: 1.5rem;
+    padding-block-start: 1.5rem;
+  }
+  .bullets {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .bullet {
+    width: 0.5rem;
+    height: 0.5rem;
+    border: solid 1px #a80000;
+    border-radius: 50%;
+  }
+  .bullet-active {
+    background-color: #a80000;
+  }
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+  .slider {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+// Title heading
+
+.wp-block-studiowac-catalog :is(.section-title) {
+  font-size: clamp(1.125rem, 0.7272727272727273rem + 1.6317016317016315vw, 2rem);
+  font-weight: 500;
+  color: #bb0b00;
+  position: relative;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.56rem;
+}
+.wp-block-studiowac-catalog :is(.section-title .section-title__text) {
+  font-size: clamp(1.125rem, 0.7272727272727273rem + 1.6317016317016315vw, 2rem);
+  width: -moz-fit-content;
+  font-weight: 400;
+  width: fit-content;
+  background-color: #f5f5f5 !important;
+  color: #bb0b00 !important;
+  position: relative;
+  padding-inline: 2rem;
+}
+.wp-block-studiowac-catalog :is(.section-title-box) {
+  position: relative;
+  width: min(90rem, 100%) !important;
+  margin-inline: auto;
+  z-index: 10;
+  &::before {
+    content: "";
+    height: 0.0625rem;
+    position: absolute;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: #bb0b00;
+    z-index: 0;
+  }
+}
+
+// .wp-block-studiowac-catalog :is(.search-link) {
+//   --red: #bb0b00;
+//   --red-light: #fbf0f0;
+//   --red-dark: #980000;
+//   min-height: 5.5rem;
+//   overflow: hidden;
+//   &:hover,
+//   &:active,
+//   &:focus-within {
+//     .content {
+//       background-color: var(--red-dark);
+//     }
+//   }
+
+//   margin-inline: auto;
+//   display: grid;
+//   width: 100%;
+//   picture {
+//     height: 100%;
+//     overflow: hidden;
+//     padding: 0;
+//     display: grid;
+//     background: transparent;
+//     img {
+//       width: 100%;
+//       height: 100%;
+//       transition: transform ease-in-out 0.8s;
+//       object-fit: cover;
+//     }
+//   }
+
+//   grid-template-columns: auto 1fr;
+// }

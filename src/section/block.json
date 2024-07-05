@@ -1,0 +1,135 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studiowac/section",
+  "version": "0.1.0",
+  "title": "Studiowac Section",
+  "category": "theme",
+  "icon": "layout",
+  "description": "Main Section Studiowac.pl",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "showCarousel": {
+      "type": "boolean",
+      "default": false
+    },
+    "categories": {
+      "type": "array",
+      "default": [],
+      "query": {
+        "id": {
+          "type": "number"
+        }
+      }
+    },
+    "exclude": {
+      "type": "number",
+      "default": 0
+    },
+    "titleColor": {
+      "type": "string",
+      "default": "black"
+    },
+    "title": {
+      "type": "string",
+      "default": "Section"
+    },
+    "titleUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "bottomAd": {
+      "type": "object",
+      "default": {
+        "title": "Reklama",
+        "show": false,
+        "newTab": false,
+        "url": "#",
+        "type": "0",
+        "customHtml": "<h1>REKLAMA</h1>",
+        "imgUrl": "https://placehold.co/600x400",
+        "imgSmUrl": "https://placehold.co/300x200",
+        "imgId": 0
+      }
+    },
+    "adverts": {
+      "type": "array",
+      "default": [
+        {
+          "show": false,
+          "newTab": false,
+          "url": "#",
+          "type": 0,
+          "customHtml": "<h1>REKLAMA 1</h1>",
+          "imgUrl": "https://placehold.co/600x400",
+          "imgSmUrl": "https://placehold.co/300x200",
+          "imgId": 0,
+          "color": "#bb0b00",
+          "tag": "tag text",
+          "text": "Title text"
+        },
+        {
+          "show": true,
+          "newTab": false,
+          "url": "#",
+          "type": 0,
+          "customHtml": "<h1>REKLAMA 2</h1>",
+          "imgUrl": "https://placehold.co/600x400",
+          "imgSmUrl": "https://placehold.co/300x200",
+          "imgId": 0,
+          "color": "#bb0b00",
+          "tag": "tag text",
+          "text": "Title text"
+        },
+        {
+          "show": false,
+          "newTab": false,
+          "url": "#",
+          "type": 0,
+          "customHtml": "<h1>REKLAMA 3</h1>",
+          "imgUrl": "https://placehold.co/600x400",
+          "imgSmUrl": "https://placehold.co/300x200",
+          "imgId": 0,
+          "color": "#bb0b00",
+          "tag": "tag text",
+          "text": "Title text"
+        },
+        {
+          "show": false,
+          "newTab": false,
+          "url": "#",
+          "type": 0,
+          "customHtml": "<h1>REKLAMA 4</h1>",
+          "imgUrl": "https://placehold.co/600x400",
+          "imgSmUrl": "https://placehold.co/300x200",
+          "imgId": 0,
+          "color": "#bb0b00",
+          "tag": "tag text",
+          "text": "Title text"
+        }
+      ]
+    },
+    "orderby": {
+      "type": "string",
+      "default": "rand"
+    },
+    "posts": {
+      "type": "array",
+      "default": [],
+      "query": {
+        "id": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "textdomain": "section",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

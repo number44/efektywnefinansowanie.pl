@@ -1,0 +1,42 @@
+[
+  {
+    "title": "carousel title 3",
+    "subtitle": "carousel subtitle 3",
+    "tag": "carousel tag",
+    "color": "#bb0b00",
+    "url": "#",
+    "newTab": "0",
+    "imgUrl": "https://cdn.pixabay.com/photo/2023/11/30/08/36/chhathpuja-8421051_1280.jpg",
+    "imgSmUrl": "https://cdn.pixabay.com/photo/2023/11/30/08/36/chhathpuja-8421051_1280.jpg"
+  },
+  {
+    "title": "carousel title 2",
+    "subtitle": "carousel subtitle 2",
+    "tag": "carousel tag",
+    "color": "#bb0b00",
+    "url": "#",
+    "newTab": "0",
+    "imgUrl": "https://cdn.pixabay.com/photo/2023/06/11/01/24/flowers-8055013_640.jpg",
+    "imgSmUrl": "https://cdn.pixabay.com/photo/2023/06/11/01/24/flowers-8055013_640.jpg"
+  },
+  {
+    "title": "carousel title 1",
+    "subtitle": "carousel subtitle 1",
+    "tag": "carousel tag",
+    "color": "#bb0b00",
+    "url": "#",
+    "newTab": "0",
+    "imgUrl": "https://cdn.pixabay.com/photo/2023/12/08/05/41/cat-8436848_640.jpg",
+    "imgSmUrl": "https://cdn.pixabay.com/photo/2023/12/08/05/41/cat-8436848_640.jpg"
+  },
+  {
+    "title": "carousel title 1",
+    "subtitle": "carousel subtitle 1",
+    "tag": "carousel tag",
+    "color": "#bb0b00",
+    "url": "#",
+    "newTab": "0",
+    "imgUrl": "https://cdn.pixabay.com/photo/2023/12/08/05/41/cat-8436848_640.jpg",
+    "imgSmUrl": "https://cdn.pixabay.com/photo/2023/12/08/05/41/cat-8436848_640.jpg"
+  }
+]

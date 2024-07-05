@@ -1,0 +1,47 @@
+.box-large {
+  width: 100%;
+  picture {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--section-color);
+    width: 100%;
+    height: 0.25rem;
+  }
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  & > * {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .content {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+    .title {
+      line-height: 1.5;
+      max-width: 22ch;
+      color: white;
+      color: #fff;
+      font-family: Roboto;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+}

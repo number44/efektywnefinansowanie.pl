@@ -1,0 +1,35 @@
+#section-black {
+  --section-bg: #fff;
+  --section-color: var(--dark);
+  margin-top: 0;
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+    @media (min-width: 62em) {
+      grid-template-columns: repeat(3, 1fr);
+
+      .banner-one {
+        grid-row: 2/3;
+      }
+      .banner-two {
+        grid-column: 3/4;
+        grid-row: 3/4;
+      }
+      .banner-big {
+        grid-column: 1/4;
+      }
+    }
+
+    .logos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      .logo {
+        aspect-ratio: 1/1;
+
+        picture {
+        }
+      }
+    }
+  }
+}

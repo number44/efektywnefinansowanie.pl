@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Post 1 Title",
+    "content": "This is the content of post 1.",
+    "status": "publish",
+    "categories": [1, 2]
+  },
+  {
+    "title": "Post 2 Title",
+    "content": "This is the content of post 2.",
+    "status": "publish",
+    "categories": [3]
+  },
+  {
+    "title": "Post 3 Title",
+    "content": "This is the content of post 3.",
+    "status": "publish",
+    "categories": [1]
+  },
+  {
+    "title": "Post 4 Title",
+    "content": "This is the content of post 4.",
+    "status": "publish",
+    "categories": [2]
+  },
+  {
+    "title": "Post 5 Title",
+    "content": "This is the content of post 5.",
+    "status": "publish",
+    "categories": [3]
+  },
+  {
+    "title": "Post 6 Title",
+    "content": "This is the content of post 6.",
+    "status": "publish",
+    "categories": [1, 2]
+  },
+  {
+    "title": "Post 7 Title",
+    "content": "This is the content of post 7.",
+    "status": "publish",
+    "categories": [3]
+  },
+  {
+    "title": "Post 8 Title",
+    "content": "This is the content of post 8.",
+    "status": "publish",
+    "categories": [1]
+  },
+  {
+    "title": "Post 9 Title",
+    "content": "This is the content of post 9.",
+    "status": "publish",
+    "categories": [2, 3]
+  }
+]

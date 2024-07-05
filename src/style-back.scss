@@ -1,0 +1,135 @@
+@use "./styles/reset";
+@use "./styles/typography";
+@use "./styles/colors";
+@use "./styles/global";
+@use "./styles/spaces";
+@use "./styles/layout";
+// @use "./styles/blocks/indicator";
+// @use "./styles/blocks/section";
+@use "./styles/blocks/header";
+@use "./styles/blocks/search";
+@use "./styles/blocks/mobilenav";
+@use "./styles/blocks/container";
+@use "./styles/blocks/swiper";
+@use "./styles/ui/buttons";
+@use "./styles/blocks/searchsection";
+@use "./styles/blocks/loader";
+@use "./styles/blocks/footer";
+@use "./styles/blocks/sidebar";
+// @use "./styles/blocks/baza";
+@use "./styles/components/post-excerpt";
+// @use "./styles/blocks/page-adress";
+// @use "./styles/components/box";
+@use "./styles/components/top-logos";
+@use "./styles/components/copyrights";
+// @use "./styles/components/box-tag";
+@use "./styles/components/catalog-links";
+// @use "./styles/components/card";
+@use "./styles/components/wyszukiwarka";
+// @use "./styles/sections/section-blue";
+@use "./styles/sections/section-black";
+@use "./styles/sections/section-orange";
+@use "./styles/sections/section-red";
+@use "./styles/pages/category";
+@use "./styles/pages/matura";
+@use "./styles/pages/school";
+@use "./styles/ui/checkbox";
+@use "./styles/ui/chips";
+// @use "./styles/components/headline";
+@use "./styles/blocks/modal";
+@use "./styles/pages/uczelnia";
+@use "./styles/ui/lineclamp";
+@use "./styles/pages/page";
+@use "./styles/pages/article";
+@use "./styles/blocks/breadcrumb";
+@use "./styles/blocks/cookies";
+@use "./styles/blocks/ucard";
+
+@use "./styles/layout/home";
+@use "./styles/components/heading";
+@use "./styles/components/search-links";
+@use "./styles/components/boxes";
+@use "./styles/components/banner";
+@use "./styles/components/logos-bottom";
+@use "./styles/blocks/presentation";
+@use "./styles/components/swiper-red";
+@use "./styles/components/dialog";
+@use "./styles/components/comments";
+@use "./styles/pages/academy";
+@use "./styles/grids";
+@use "./styles/scrollbar";
+@use "./styles/pages/editor";
+main {
+  min-height: 200vh;
+}
+.hide {
+  display: none;
+}
+
+body {
+  color: #1a1a1a;
+  background: #fff;
+  overflow-x: hidden;
+}
+.bg-light {
+  background: var(--light);
+}
+
+.test {
+  background: cadetblue;
+}
+
+.grid-2 {
+  display: grid;
+  gap: 1.5rem;
+  @media (min-width: 62em) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid-3 {
+  display: grid;
+  gap: 1.5rem;
+  @media (min-width: 62em) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.page-top-margin {
+  padding-top: 4rem;
+  @media (min-width: 62em) {
+    padding-top: 5.5rem;
+  }
+}
+
+.flex-line {
+  display: flex;
+  align-items: center;
+}
+
+.part {
+  background: red;
+}
+
+// .ProseMirror {
+//   small {
+//     --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+//   }
+//   p {
+//     --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+//   }
+//   h4 {
+//     --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+//   }
+//   h3 {
+//     --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+//   }
+//   h2 {
+//     --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+//   }
+//   h1 {
+//     --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem) !important;
+//   }
+
+//   // --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+// }

@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&display=swap");
+:root {
+  --font-size-level-zero: 0.875rem;
+  --font-size-level-one: 1rem;
+  --font-size-level-two: clamp(1.125rem, 1.0892857142857142rem + 0.17857142857142858vw, 1.25rem);
+  --font-size-level-three: clamp(1.25rem, 1.0178571428571428rem + 0.5357142857142857vw, 1.5rem);
+  --font-size-paragraph: clamp(1rem, 0.85rem + 0.5333333333333333vw, 1.25rem);
+
+  --font-size-level-four: clamp(1.5rem, 1.2142857142857144rem + 1.4285714285714286vw, 2.5rem);
+  --font-size-level-eight: clamp(1.5rem, 1.2142857142857144rem + 1.4285714285714286vw, 2.5rem);
+  --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+  --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+
+  --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+  --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+  --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+  --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+
+  --mobile-menu: 1.5rem;
+
+  --fw-900: 900;
+  --fw-500: 500;
+}
+.fw-900 {
+  font-weight: 900;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.font-normal {
+  font-weight: 400 !important;
+}
+
+.font-italic {
+  font-style: italic;
+}
+.bg-grey {
+  background: #9c9c9c;
+}
+.font-normal {
+  font-weight: 400 !important;
+}
+.font-bold {
+  font-weight: 900 !important;
+}
+.gray {
+  color: gray;
+}
+.font-semibold .font-lightbold {
+  font-weight: 600 !important;
+}
+.wp-custom-font-size-level-zero {
+  font-size: var(--font-size-level-zero);
+}
+
+.wp-custom-font-size-level-one {
+  font-size: var(--font-size-level-one);
+}
+.wp-custom-font-size-level-two {
+  font-size: var(--font-size-level-two);
+}
+.wp-custom-font-size-level-three {
+  font-size: var(--font-size-level-two);
+}
+
+.wp-custom-font-size-level-four {
+  font-size: var(--font-size-level-two);
+}
+.wp-custom-font-size-level-eight {
+  font-size: var(--font-size-level-eight);
+}
+.wp-custom-font-weight-bold {
+  font-weight: bold;
+}
+
+.h-1 {
+  font-size: var(--font-size-level-four) !important;
+}
+.h-2 {
+  font-size: var(--font-size-level-three) !important;
+}
+.h-3 {
+  font-size: var(--font-size-level-two) !important;
+}
+.h-4 {
+  line-height: 1.2;
+  font-size: var(--font-size-level-one) !important;
+}
+
+.paragraph {
+}
+@media (min-width: 40em) {
+  :root {
+    --fs-300: 1rem;
+    --fs-400: 1.5rem;
+    --fs-500: 2rem;
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+}
+
+.h1 {
+  font-size: 1.125rem;
+  @media (min-width: 62em) {
+    font-size: 2rem;
+  }
+}
+.h2 {
+  font-size: 1.125rem;
+  @media (min-width: 62em) {
+    font-size: 1.5rem;
+  }
+}
+.h3 {
+  font-size: 0.875rem;
+  @media (min-width: 62em) {
+    font-size: 1.25rem;
+  }
+}
+.fs-text {
+  font-size: var(--font-size-paragraph);
+}
+.red {
+  color: var(--red);
+}
+.fs-search-title {
+  font-size: clamp(1.125rem, 0.7235rem + 1.6471vw, 2rem) !important;
+}
+i {
+  font-style: italic;
+}
+// h1 {
+//   /* H1_desktop */
+//   font-size: 2rem;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+//   text-transform: uppercase;
+//   // max-width: 15ch;
+// }
+
+// h2 {
+//   /* H2_desktop_Headline_secondary */
+//   font-size: 1.5rem;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+// }
+
+// h3 {
+//   color: #1a1a1a;
+
+//   /* Headline - sidebar */
+//   font-family: Roboto;
+//   font-size: 1.25rem;
+//   font-style: normal;
+//   font-weight: 500;
+//   line-height: normal;
+// }
+
+// h4 {
+//   color: #1a1a1a;
+
+//   /* H4_desktop_headline_small */
+//   font-family: Roboto;
+//   font-size: 1rem;
+//   font-style: normal;
+//   font-weight: 600;
+//   line-height: normal;
+// }
+// // h5 {
+// //   font-size: var(--step-1);
+// // }
+
+// // h6 {
+// //   font-size: var(--step-0);
+// // }
+// // p {
+// //   font-size: var(--step--1);
+// //   // max-width: 60ch;
+// // }
+// // small {
+// //   font-size: var(--step--2);
+// // }
+
+// .headline {
+//   color: #fff;
+//   font-size: 1.5rem;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: normal;
+// }
+// .text-sm {
+//   color: #1a1a1a;
+//   font-size: 0.875rem;
+// }
+// .text-lg {
+//   color: #bb0b00;
+//   text-align: center;
+//   /* h1-mobile */
+//   font-family: Roboto;
+//   font-size: var(--fs-500);
+//   font-style: normal;
+//   font-weight: 500;
+//   line-height: normal;
+//   text-transform: uppercase;
+// }
+
+// .grid-3 {
+//   display: grid;
+//   @media (min-width: 62em) {
+//     grid-template-columns: repeat(3, 1fr);
+//   }
+// }
+// .grid-2 {
+//   display: grid;
+//   @media (min-width: 62em) {
+//     grid-template-columns: repeat(3, 1fr);
+//   }
+// }
+
+// .article-title {
+//   text-align: left;
+//   color: #008acf;
+
+//   /* H1_desktop_art */
+//   font-size: 2rem;
+//   font-style: normal;
+//   font-weight: 500;
+//   line-height: normal;
+// }
+// .blue {
+//   color: var(--blue);
+// }
+// .red {
+//   color: var(--red);
+// }
+// .bg-blue {
+//   background: var(--blue);
+// }
+// .bg-red {
+//   background: var(--red);
+// }
+// .text-center {
+//   text-align: center;
+// }
+// .text-white {
+//   color: white;
+// }

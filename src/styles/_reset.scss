@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+header {
+  margin: 0;
+  padding: 0;
+}
+figure,
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  min-height: 100vh;
+}
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+button {
+  outline: none;
+  border: none;
+}

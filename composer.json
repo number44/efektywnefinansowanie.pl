@@ -1,0 +1,17 @@
+{
+  "name": "daniel/studiowac",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Src\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "number44",
+      "email": "daniel.lesiewicz.dev@gmail.com"
+    }
+  ],
+  "require": {}
+}

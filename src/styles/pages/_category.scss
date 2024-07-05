@@ -1,0 +1,51 @@
+// .category-page :is(.step-one) {
+//   margin-top: 1.5rem;
+// }
+// .category-page :is(.post-excerpt) {
+//   margin-bottom: 1.5rem;
+// }
+// .category-page :is(.banner) {
+//   margin-block: 1rem;
+// }
+
+// .category-page {
+// }
+// #category {
+//   padding-top: 6rem;
+//   display: grid;
+//   grid-template-columns: 1fr;
+//   @media (min-width: 60rem) {
+//     grid-template-columns: 2fr 1fr;
+//   }
+//   gap: 1.5rem;
+//   padding-bottom: 5rem;
+// }
+// .grid-one {
+//   padding-inline: 0.5rem;
+//   overflow-x: hidden;
+//   display: grid;
+//   gap: 1.5rem;
+//   @media (min-width: 62em) {
+//     grid-template-areas:
+//       "main verone"
+//       "main vertwo"
+//       "grid-box1  grid-box2"
+//       "grid-box3  grid-box4"
+//       "grid-box5  grid-box6";
+//   }
+//   @media (min-width: 62em) {
+//     .main-box {
+//       grid-area: main;
+//     }
+//     .verone {
+//       grid-area: verone;
+//     }
+//   }
+// }
+
+// .grid-2 {
+//   display: grid;
+//   @media (min-width: 62em) {
+//     grid-template-columns: 1fr 1fr;
+//   }
+// }

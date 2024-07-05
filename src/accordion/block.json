@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "accordion/accordion",
+  "version": "0.1.0",
+  "title": "Akordeon Rozwijany",
+  "category": "design",
+  "icon": "arrow-down-alt",
+  "description": "Blok Akordeon, z rozwijaną treścią",
+  "example": {},
+  "supports": {
+    "interactivity": true
+  },
+  "attributes": {
+    "accordions": {
+      "type": "array",
+      "default": [
+        {
+          "title": "Tytuł akordeonu",
+          "content": "Tresc akordeonu"
+        }
+      ]
+    }
+  },
+  "textdomain": "accordion",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScriptModule": "file:./view.js"
+}

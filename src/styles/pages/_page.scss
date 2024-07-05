@@ -1,0 +1,41 @@
+.lightbox-active {
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  cursor: zoom-out !important;
+  width: max-content;
+  max-width: 100%;
+  height: max-content;
+  position: fixed !important;
+  z-index: 9999;
+  background: rgba(255, 255, 255, 1);
+  img {
+    left: 50%;
+    top: 50%;
+    width: max-content;
+    max-width: 80%;
+    height: max-content;
+    position: fixed !important;
+  }
+}
+.m-page {
+  margin-top: 3.6rem;
+  @media (min-width: 62em) {
+    margin-top: 5rem;
+  }
+}
+.page-grid {
+  align-items: start;
+  display: grid;
+  gap: 1.5rem;
+  @media (min-width: 62em) {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  @media (min-width: 62em) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

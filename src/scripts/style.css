@@ -1,0 +1,19 @@
+.image-container {
+  overflow: hidden;
+  width: 100%;
+}
+.placeholder {
+  width: 100%;
+  height: auto;
+  filter: blur(10px);
+  transition: filter 3s ease;
+}
+.loaded {
+  filter: blur(0) !important;
+}
+
+.placeholder-tag {
+  transition:
+    transform ease-in-out 0.8s,
+    filter ease-in-out 3s !important;
+}

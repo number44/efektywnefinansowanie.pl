@@ -1,0 +1,58 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-studiowac-footer {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  width: 100vw;
+  width: 100dvw;
+  background: var(--blue);
+  padding-block: 2rem;
+  @media (min-width: 62em) {
+    padding-block: 2.5rem;
+  }
+  .copyrights {
+    font-family: Roboto;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.400000006;
+    text-align: center;
+  }
+  width: 100%;
+  color: white;
+
+  ul {
+    margin-inline: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 1rem;
+    gap: 1.25rem;
+    flex-direction: column;
+    @media (min-width: 62em) {
+      flex-direction: row;
+      a {
+        white-space: nowrap;
+      }
+    }
+  }
+}
+footer :is(a:hover) {
+  text-decoration: underline;
+}
+footer :is(.go-down) {
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  top: 1rem;
+  width: 1rem;
+}

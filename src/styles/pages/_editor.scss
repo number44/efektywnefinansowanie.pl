@@ -1,0 +1,11 @@
+.editor-app-title {
+  margin-top: 1rem;
+  @media (min-width: 62rem) {
+    margin-top: 0;
+  }
+}
+#editor-app {
+  @media (min-width: 10rem) {
+    margin-top: 0;
+  }
+}

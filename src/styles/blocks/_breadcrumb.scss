@@ -1,0 +1,35 @@
+.breadcrumb {
+  --breadcrumb-color: var(--blue);
+  font-size: 0.75rem;
+  display: flex;
+  line-height: 1.2;
+  margin-inline: auto;
+  white-space: nowrap;
+  columns: #1a1a1a;
+  text-overflow: clip;
+  display: flex;
+  align-items: center;
+  @media (min-width: 390px) {
+    padding-inline: 0.5rem !important;
+  }
+
+  padding-block: 0.58rem;
+  @media (min-width: 62em) {
+    padding-block: 1.12rem;
+  }
+  .page-title {
+    overflow-x: hidden;
+    text-overflow: clip;
+  }
+  &__link {
+    &:hover {
+      text-decoration: underline;
+    }
+    color: var(--breadcrumb-color);
+    display: flex;
+    align-items: center;
+    img {
+      width: 1rem;
+    }
+  }
+}

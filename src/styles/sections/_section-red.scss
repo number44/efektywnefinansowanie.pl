@@ -1,0 +1,38 @@
+#section-red {
+  padding-bottom: 2.85rem;
+  --section-bg: #fff;
+  --section-color: var(--red);
+  .grid {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    @media (min-width: 62em) {
+      grid-template-columns: repeat(8, 1fr);
+    }
+    gap: 1.5rem;
+  }
+  .logo {
+    aspect-ratio: 1/1;
+    position: relative;
+    display: grid;
+    place-items: center;
+    img {
+      width: 95%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 0%;
+      transition: ease-in-out 0.3s width;
+      height: 0.125rem;
+      background: var(--section-color);
+    }
+    &:hover,
+    &:active {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}

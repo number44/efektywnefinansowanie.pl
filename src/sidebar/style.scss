@@ -1,0 +1,180 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-sidebar-sidebar * {
+  box-sizing: border-box;
+}
+.wp-block-sidebar-sidebar {
+  align-self: self-start;
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  & > * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  font-size: 1em;
+
+  padding-block: 0;
+  .aside-link {
+    display: flex;
+    gap: 0.2rem;
+    font-size: 0.75rem;
+    align-items: center;
+    padding-block: 0.58rem;
+    @media (min-width: 62em) {
+      padding-block: 1.12rem;
+    }
+    a {
+      font-size: 0.75rem;
+
+      color: #0073aa;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  .carousel {
+    width: 100%;
+    color: white;
+    display: grid;
+    // aspect-ratio: 25/22.75;
+    .carousel-info {
+      color: #fff;
+      box-sizing: border-box;
+      margin: 0;
+      font: inherit;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: #bb0b00;
+      font-size: clamp(0.625rem, 0.5114rem + 0.4662vw, 0.875rem);
+      padding: 0.5rem 1rem;
+      z-index: 2;
+      text-transform: uppercase;
+    }
+    .carousel-image {
+      position: relative;
+    }
+    .carousel-content {
+      position: absolute;
+      inset-block-end: 0;
+      font-size: clamp(1.125rem, 1.0682rem + 0.2331vw, 1.25rem);
+      font-weight: 400;
+      padding-left: 1rem;
+      color: white;
+      text-align: left;
+      align-self: self-end;
+      padding-right: 1.75rem;
+      padding-bottom: 1.5rem;
+      gap: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      z-index: 11;
+      .sw-link {
+        font-size: clamp(1.125rem, 1.0682rem + 0.2331vw, 1.25rem) !important;
+        font-weight: 400 !important;
+        cursor: pointer;
+        pointer-events: none;
+        color: #fff;
+        text-align: left;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font: inherit;
+      }
+      .btn {
+        outline: none;
+        border: none;
+        cursor: pointer;
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        background-color: var(--red);
+        transition: background-color 0.3s ease-in-out;
+        &:hover {
+          background-color: var(--red-dark);
+        }
+      }
+    }
+    .carousel-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      inset: 0;
+    }
+    .carousel-title {
+      font-weight: 400;
+    }
+    .carousel-image :is(.content) {
+      width: min(90rem, 100%);
+      height: 100%;
+      margin-inline: auto;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      justify-content: flex-end;
+      align-items: flex-start;
+      color: #fff;
+      padding-block-end: 6.19rem;
+    }
+    .carousel-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.wp-block-sidebar-sidebar :is(.rotated-icon) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wp-block-sidebar-sidebar :is(.arrows) {
+  color: #fff;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  z-index: 3;
+  position: absolute;
+  right: 0.4rem;
+  top: 0.5rem;
+  height: 24px;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.wp-block-sidebar-sidebar :is(.arrows .arrow) {
+  padding: 0.1rem;
+  height: 2rem;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  width: 2rem;
+}
+.wp-block-sidebar-sidebar :is(.arrows .bullet) {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: solid 1px #fff;
+  cursor: pointer;
+}
+.wp-block-studiowac-carousel :is(.bullet-active) {
+  background-color: #fff !important;
+}

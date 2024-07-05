@@ -1,0 +1,26 @@
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  align-items: center;
+}
+.chip {
+  --chip-color: #d9d9d9;
+  cursor: pointer;
+  display: inline-flex;
+  padding: 0.625rem 1rem;
+  align-items: flex-start;
+  gap: 0.75rem;
+  border-radius: 3.75rem;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+}
+.chip:hover,
+.chip:focus {
+  background: var(--blue);
+  color: white !important;
+}
+.active {
+  border: 1px solid #008acf;
+  color: #008acf;
+}

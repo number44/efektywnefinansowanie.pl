@@ -1,0 +1,38 @@
+.headline {
+  position: relative;
+  font-size: var(--fs-500);
+  z-index: 1;
+  &::before {
+    content: "";
+    height: 1px;
+    background: var(--section-color);
+    width: 100%;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+    z-index: -1;
+  }
+  text-align: center;
+  color: var(--section-color);
+  &-text,
+  h1,
+  h2 {
+    align-self: flex-start;
+    z-index: 2;
+    display: inline-block;
+    font-size: var(--fs-500);
+    color: var(--section-color);
+    background: var(--section-bg);
+    padding-inline: 2.5rem;
+    text-transform: uppercase;
+    line-height: normal;
+  }
+  .btn {
+    padding-inline: 2.5rem;
+  }
+}
+.headline--left {
+  text-align: left !important;
+  display: none;
+}

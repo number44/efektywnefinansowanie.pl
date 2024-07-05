@@ -1,0 +1,44 @@
+.box-tag {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+  .blue {
+    background: var(--blue);
+  }
+  .orange {
+    background: var(--orange);
+  }
+  .red {
+    background: var(--red);
+  }
+  .tag {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0.5rem 1rem;
+  }
+  picture {
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform ease-in-out 0.3s;
+    }
+  }
+  picture,
+  .content {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .content {
+    max-width: 30ch;
+    font-size: var(--fs-350);
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}

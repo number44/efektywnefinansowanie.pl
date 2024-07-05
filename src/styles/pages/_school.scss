@@ -1,0 +1,165 @@
+.school-header {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--red);
+  @media (min-width: 62em) {
+    height: 25rem;
+  }
+  .school-desc {
+    display: grid;
+    gap: 0.5rem;
+  }
+  &__text {
+    a:hover {
+      text-decoration: underline;
+    }
+    padding-inline: 1.5rem;
+    padding-block: 1.1rem;
+    @media (min-width: 62rem) {
+      padding-inline: 1.25rem;
+    }
+    flex: 0;
+    color: white;
+  }
+  .school-name {
+    font-size: 1.25rem;
+    max-width: 40ch;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: clamp(
+      1.25rem,
+      0.9772727272727273rem + 1.3636363636363635vw,
+      2rem
+    );
+  }
+  .school-type {
+    font-size: 1rem;
+    line-height: 1.625rem; /* 162.5% */
+  }
+}
+.school-header :is(.school-p icture) {
+  flex: 1;
+  position: relative;
+  img {
+    @media screen and (min-width: 62rem) {
+      position: absolute;
+    }
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.school-accordion {
+  margin-top: 1.5rem;
+}
+.school-accordion :is(.prose) {
+  margin-block: 1.5rem;
+}
+.school-accordion :is(h1) {
+  margin-block: 0.1rem;
+}
+.school-accordion :is(.school-accordion-panel) {
+  padding-inline: 1.5rem;
+  padding-block: 1rem;
+  font-size: clamp(1.125rem, 0.7235rem + 1.6471vw, 2rem);
+  background-color: var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.school-accordion :is(.school-accordion-panel__closed) {
+  background: white !important;
+  color: #1a1a1a;
+  border-bottom: 1px solid #ccc;
+  svg {
+    transform: rotate(180deg);
+  }
+}
+.school-accordion-panel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: clamp(1rem, 0.8853rem + 0.4706vw, 1.25rem);
+}
+.school-accordion-content {
+  display: grid;
+  transition: all 500ms !important;
+  grid-template-rows: 0fr;
+}
+.school-accordion-content :is(a):hover :is(h3) {
+  text-decoration: underline;
+}
+.school-accordion :is(.school-field-panel) {
+  display: grid;
+  padding-inline: 1.5rem;
+  cursor: pointer;
+  grid-template-columns: repeat(4, 1fr);
+  height: 4rem;
+  place-items: center;
+  position: relative;
+  &::after {
+    content: "";
+    inset-block-end: 0;
+    inset-inline: 0;
+    height: 1px;
+    background-color: var(--grey);
+    width: 100%;
+    opacity: 0.3;
+    position: absolute;
+  }
+  .school-field-panel__name {
+    grid-column: span 3;
+    width: 100%;
+  }
+  span {
+    color: var(--grey);
+  }
+  .icon {
+    justify-self: end;
+    height: auto;
+    transition: transform ease-in-out 0.3s;
+  }
+}
+
+.school-field-panel__open :is(.icon) {
+  transform: rotate(180deg);
+}
+
+.field {
+  display: grid;
+  gap: 1rem;
+}
+.field-name {
+  color: var(--red);
+}
+.field-list {
+  display: grid;
+  gap: 1rem;
+  list-style: disc;
+  list-style-position: inside;
+  li {
+    text-indent: 50px;
+  }
+  li::marker {
+    color: var(--red);
+  }
+}
+
+.school-accordion-content-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.school :is(ul) {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.school-grid {
+  margin-top: 01.5rem;
+  display: grid;
+}
+.school-grid :is(.accordion-box) {
+  margin-bottom: 0;
+}

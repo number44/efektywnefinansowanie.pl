@@ -1,0 +1,44 @@
+dialog {
+  transition: all ease-in-out 0.3s;
+  width: min(100%, 62rem);
+  border: none;
+  margin: auto;
+  outline: none;
+  box-shadow: 0 0 3px #434343;
+}
+dialog:focus {
+  border: solid 2px black;
+}
+dialog::backdrop {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.close-dialog {
+  cursor: pointer;
+  outline: none;
+  inset-inline-end: 2rem;
+  inset-block-start: 2rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  position: fixed;
+  background: white;
+  border-radius: 50%;
+  border: solid 2px var(--dark);
+  &:hover svg {
+    transform: rotate(90deg);
+  }
+  svg {
+    transition: transform ease-in-out 0.3s;
+    stroke: var(--dark);
+  }
+}
+
+.dialog-context {
+  box-shadow: 0px 0px 30px #434343 !important;
+}

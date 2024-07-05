@@ -1,0 +1,38 @@
+.mt-top {
+  margin-top: 3.6rem;
+  @media (min-width: 62rem) {
+    margin-top: 5rem !important;
+  }
+}
+.layout-grid {
+  display: grid;
+  gap: 1.5rem;
+  @media (min-width: 75rem) {
+    grid-template-columns: 1fr min(25rem, 100%);
+  }
+  main {
+    align-self: self-start;
+  }
+}
+
+.mt-page {
+  margin-top: 4rem;
+  @media (min-width: 62em) {
+    margin-top: 5.8rem;
+  }
+}
+
+.page-layout {
+  display: grid;
+  gap: 1.5rem;
+  @media (min-width: 62em) {
+    grid-template-columns: 1fr 25rem;
+  }
+  main {
+    align-self: self-start;
+  }
+}
+
+main {
+  min-height: unset !important;
+}

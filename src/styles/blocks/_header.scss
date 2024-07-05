@@ -1,0 +1,35 @@
+.scrolled {
+  height: 3.6rem !important;
+  @media (min-width: 62rem) {
+    height: 4rem !important;
+  }
+}
+header {
+  ul {
+    list-style: none;
+  }
+  nav {
+    a {
+      all: unset;
+      white-space: nowrap;
+      &:hover {
+        border-bottom: 1px white solid;
+      }
+    }
+  }
+  z-index: 30;
+  background: var(--blue);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 100vw;
+  max-width: 100dvw;
+  height: 3.6rem;
+  transition: height ease-in-out 0.3s;
+  @media (min-width: 62em) {
+    height: 5rem;
+  }
+  border: 0px;
+  display: flex;
+  align-items: center;
+}

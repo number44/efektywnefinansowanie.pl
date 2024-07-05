@@ -1,0 +1,62 @@
+.academy-header {
+  margin-bottom: 1.06rem;
+}
+.academy-header__desc {
+  background: var(--red);
+  padding-inline: 1.88rem;
+  padding-block: 1rem;
+}
+.academy-header__desc :is(.title) {
+  font-size: clamp(1.25rem, 0.9090909090909092rem + 1.3986013986013985vw, 2rem);
+  color: white;
+  max-width: 50rem;
+}
+.academy-header__desc :is(.type) {
+  margin-top: 0.38rem;
+  color: white;
+  line-height: 1.625rem; /* 162.5% */
+}
+.academy-info {
+  &__logo {
+    height: 7.65rem;
+    aspect-ratio: 4/3;
+    padding: 0.625rem;
+  }
+}
+
+.uczelnia-content {
+  opacity: 0;
+  animation-name: show;
+  animation-duration: 0.5s;
+  transform: translateX(100px);
+  animation-fill-mode: forwards;
+}
+@keyframes show {
+  0% {
+    transform: translateX(100px);
+
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+
+    opacity: 1;
+  }
+}
+
+.uczelnia-content--hide {
+  animation-duration: 0.5s;
+  transform: translateX(100px);
+  animation-name: show;
+  animation-fill-mode: backwards;
+}
+
+.uczelnia-info-small {
+  picture {
+    max-width: 16.5rem;
+  }
+}
+
+.accordion-red :is(.accordion_content-open) {
+  border-bottom: 1px solid #d9d9d9;
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studiowac/bottom",
+  "version": "0.1.0",
+  "title": "Studiowac Bottom",
+  "category": "theme",
+  "icon": "layout",
+  "description": "Main Bottom Studiowac.pl",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Wyszukiwarka Uczelni wyższych, kierunków studiów i zawodów"
+    },
+    "titleSm": {
+      "type": "string",
+
+      "default": "Wyszukiwarka Uczelni wyższych, <br> kierunków studiów i zawodów"
+    },
+    "titleUrl": {
+      "type": "string",
+      "default": "#"
+    }
+  },
+  "textdomain": "bottom",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studiowac-category/category",
+  "version": "0.1.0",
+  "title": "Category Post Block",
+  "category": "theme",
+  "icon": "text-page",
+  "description": "Post block category",
+  "example": {},
+  "supports": {
+    "interactivity": true,
+    "multiple": false,
+    "inserter": true
+  },
+  "attributes": {
+    "sidebar": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "category",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScriptModule": "file:./view.js"
+}

@@ -1,0 +1,14 @@
+#catalog-links {
+  --section-bg: var(--light);
+  --section-color: var(--red-dark);
+  background: var(--section-bg);
+  padding-top: 2rem;
+  padding-bottom: 1.75rem;
+  .links {
+    display: grid;
+    gap: 1.5rem;
+    @media (min-width: 90rem) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "sidebar/sidebar",
+  "version": "0.1.0",
+  "title": "Sidebar block",
+  "category": "theme",
+  "icon": "table-col-before",
+  "description": "Main Sidebar ",
+  "example": {},
+  "supports": {
+    "interactivity": true
+  },
+  "attributes": {
+    "toplink": {
+      "type": "object",
+      "default": {
+        "text": "Top ",
+        "title": "",
+        "newTab": false,
+        "url": "#"
+      }
+    },
+    "autoplay": {
+      "type": "object",
+      "default": {
+        "auto": true,
+        "delay": 5000
+      }
+    },
+    "advert": {
+      "type": "object",
+      "default": {
+        "show": false,
+        "newTab": false,
+        "url": "#",
+        "type": 0,
+        "customHtml": "<h1>REKLAMA 1</h1>",
+        "imgUrl": "https://placehold.co/600x400",
+        "imgSmUrl": "https://placehold.co/300x200",
+        "imgId": 0,
+        "color": "#bb0b00",
+        "tag": "tag text",
+        "text": "Title text"
+      }
+    }
+  },
+  "textdomain": "sidebar",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScriptModule": "file:./view.js"
+}
